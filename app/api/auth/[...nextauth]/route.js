@@ -2,12 +2,13 @@ import NextAuth from "next-auth/next";
 
 
 export const authOptions = {
+    debug: true,
     providers: [
     {
         id: "descope",
         name: "Descope",
         type: "oauth",
-        wellKnown: "https://api.descope.com/"+process.env.DESCOPE_API+"/.well-known/openid-configuration",
+        wellKnown: "https://api.descope.com/" + process.env.DESCOPE_API + "/.well-known/openid-configuration",
         authorization: { params: { scope: "openid email profile" } },
         idToken: true,
         clientId: process.env.DESCOPE_CLIENT_ID,
