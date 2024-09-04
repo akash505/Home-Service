@@ -61,7 +61,7 @@ function Header() {
              </DropdownMenuContent>
           </DropdownMenu>
         ) : (
-          <Button onClick={() => signIn("descope")}>Login / Sign Up</Button>
+          <Button onClick={() => signIn('descope')}>Login / Sign Up</Button>
         )}
       </div>
     </div>
