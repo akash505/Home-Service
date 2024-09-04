@@ -1,7 +1,7 @@
 import { Outfit } from "next/font/google";
 import "./globals.css";
 import Header from "./_components/Header";
-import NextAuthSessionProvider from "./api/auth/[...nextauth]/provider";
+import NextAuthSessionProvider from "./provider";
 
 import { Toaster } from "@/components/ui/sonner"
 
